@@ -13,8 +13,8 @@ public class MathExcercises {
 
         long randomNumber = Math.round(Math.random()* 10);
         System.out.println(randomNumber);
-        long newValue = randomNumber + 5;
-        System.out.println(newValue);
+        randomNumber = randomNumber + 5;
+        System.out.println(randomNumber);
 
         int hours = 41;
         int clockHours = hours % 24;
@@ -26,12 +26,12 @@ public class MathExcercises {
         System.out.println(minutes + " minutes = " + newHours + " hours and " + leftover + " minutes.");
 
         int nrHours = 3;
-        int nrMinutes = 23;
+        int nrMinutes = 59;
         int minutesToAdd = 183;
-        int newhours = minutesToAdd / 60;
-        int newmin = minutesToAdd % 60;
+        int newhours = (minutesToAdd + nrMinutes) / 60;
+        int newmin = (minutesToAdd + nrMinutes) % 60;
         System.out.println("Start time: " + nrHours + ":" + nrMinutes);
         System.out.println("Minutes to add: " + minutesToAdd);
-        System.out.println("Final time: " + (newhours + nrHours) + ":" + (newmin + nrMinutes));
+        System.out.println("Final time: " + (newhours + nrHours) + ":" + newmin);
     }
 }
