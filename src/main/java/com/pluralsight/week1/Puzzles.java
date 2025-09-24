@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.week1;
 
 public class Puzzles {
     public static void main(String[] args) {
