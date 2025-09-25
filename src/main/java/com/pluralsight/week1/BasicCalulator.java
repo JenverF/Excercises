@@ -1,19 +1,20 @@
 package com.pluralsight.week1;
+
 import java.util.Scanner;
 
 public class BasicCalulator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What is your favorite animal?");
-        String animal = scanner.next();
-        System.out.println("First tool that comes to mind");
-        String tool = scanner.next();
-        System.out.println("Day you were born");
-        int day = scanner.nextInt();
+        System.out.println("Enter the first number: ");
+        double firstNum = scanner.nextDouble();
+
+        System.out.println("Enter the second number: ");
+        double secNum = scanner.nextDouble();
         scanner.nextLine();
 
-        System.out.printf("Your favorite animal is %s, first tool that comes into mind is a %s and %d is the day you were born.", animal, tool, day);
-
-
+        System.out.print("Possible calculations: \n(A)dd\n(S)ubtract\n(M)ultiply\n(D)ivide\nPlease select an option: ");
+        String action = scanner.next();
+        double result = firstNum * secNum;
+        System.out.print(firstNum + " * " + secNum + " = " + result);
     }
 }
