@@ -1,4 +1,4 @@
-package com.pluralsight.week1;
+package com.pluralsight.week2;
 
 public class MenuMethod {
     static void main(String[] args) {

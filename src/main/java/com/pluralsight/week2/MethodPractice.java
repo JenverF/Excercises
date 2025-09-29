@@ -1,4 +1,4 @@
-package com.pluralsight.week1;
+package com.pluralsight.week2;
 
 public class MethodPractice {
     static void main(String[] args) {
