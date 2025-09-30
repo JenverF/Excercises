@@ -95,7 +95,7 @@ public class RentalCarCalculator {
         System.out.println("Rental Car Estimate: ");
         System.out.println("Pickup Date: " + pickUp);
         System.out.printf("Basic Car Rental: $%.2f\n", basicrental);
-        System.out.printf("Options Cost: $%.2f\n", optionsCost);
+        System.out.printf("Options Cost: $%.2f\n", optionsCost  );
         System.out.printf("Underage Driver Surcharge: $%.2f\n", underageSurcharge);
         System.out.printf("Total Cost: $%.2f\n", totalCost);
     }
