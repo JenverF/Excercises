@@ -8,9 +8,9 @@ public class FullNameGenerator {
         String firstName = enterFirstName();
         String middleName = enterMiddleName();
         String lastName = enterLastName();
-        String suffix = enterSuffix();
+        String Suffix = enterSuffix();
 
-        displayResults(firstName, middleName, lastName, suffix);
+        displayResults(firstName, middleName, lastName, Suffix);
     }
     public static String enterFirstName() {
         System.out.println("First name: ");
@@ -28,15 +28,15 @@ public class FullNameGenerator {
         System.out.println("Suffix: ");
         return scanner.nextLine().trim();
     }
-    public static void displayResults(String firstName, String middleName, String lastName, String suffix) {
+    public static void displayResults(String firstName, String middleName, String lastName, String Suffix) {
         String fullName = firstName;
 
         if(!middleName.isEmpty()) {
             fullName = fullName + " " + middleName;
         }
         fullName = fullName + " " + lastName;
-        if(!suffix.isEmpty()) {
-            fullName = fullName + ", " + suffix;
+        if(Suffix.length() > 0) {
+            fullName = fullName + ", " + Suffix;
         }
 
         System.out.println("Full name: " + fullName);

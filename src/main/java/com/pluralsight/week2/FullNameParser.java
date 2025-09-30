@@ -6,9 +6,9 @@ public class FullNameParser {
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your name: ");
-        String fullname = scanner.nextLine().trim();
+        String fullName = scanner.nextLine().trim();
 
-        String[] name = fullname.split("\\s+");
+        String[] name = fullName.split("\\s+");
 
         String firstname = "";
         String middlename = "(none)";
