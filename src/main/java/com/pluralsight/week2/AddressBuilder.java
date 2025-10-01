@@ -25,9 +25,9 @@ public class AddressBuilder {
         String shippingZip = scanner.nextLine();
 
         StringBuilder add = new StringBuilder();
-        add.append(name).append("\\n");
+        add.append(name).append("\n\n");
         add.append("Billing Address: \n").append(street).append("\n");
-        add.append(city).append(", ").append(state).append(" ").append(zip).append("\n");
+        add.append(city).append(", ").append(state).append(" ").append(zip).append("\n\n");
         add.append("Shipping Address: \n").append(shippingStreet).append("\n");
         add.append(shippingCity).append(", ").append(shippingState).append(" ").append(shippingZip).append("\n");
         System.out.println(add);
