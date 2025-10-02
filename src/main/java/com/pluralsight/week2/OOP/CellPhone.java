@@ -1,4 +1,4 @@
-package com.pluralsight.week2;
+package com.pluralsight.week2.OOP;
 
 public class CellPhone {
     private long serialNumber;
@@ -7,14 +7,21 @@ public class CellPhone {
     private String phoneNumber;
     private String owner;
 
-
     public CellPhone() {
         this.serialNumber = 0;
         this.model = "";
         this.carrier = "";
         this.phoneNumber = "";
         this.owner = "";
-        }
+    }
+
+    public CellPhone(long serialNumber, String model, String carrier, String phoneNumber, String owner) {
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
+    }
 
     public long getSerialNumber() {
         return serialNumber;
@@ -56,6 +63,14 @@ public class CellPhone {
     }
 
     public void dial(String phoneParameter) {
-        System.out.println(owner + " phone is calling " + phoneParameter);
+        System.out.printf("%s's phone is calling %s\n", owner, phoneParameter);
+    }
+
+    public void dial(String phoneParameter, String calleeName) {
+        System.out.printf("%s's phone is calling %s which belongs to %s\n", owner, phoneParameter, calleeName);
+    }
+
+    public void dial(CellPhone phoneParameter) {
+        System.out.printf("%s's phone is calling %s\n", owner, phoneParameter.getOwner());
     }
 }
