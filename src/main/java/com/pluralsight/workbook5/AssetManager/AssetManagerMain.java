@@ -28,7 +28,6 @@ public class AssetManagerMain {
                 Vehicle vehicle = (Vehicle) asset;
                 extraInfo = "Vehicle: " + vehicle.getYear() + " " + vehicle.getMakeModel();
             }
-
             System.out.println(extraInfo);
         }
     }
