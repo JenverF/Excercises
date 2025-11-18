@@ -24,4 +24,4 @@ SELECT SupplierID, COUNT(*) AS ItemCount FROM products GROUP BY SupplierID HAVIN
 -- multiplying unit price by the number of units on hand). Sort the results in
 --  order by value. If two or more have the same value, order by
 -- product name.
-SELECT ProductID, ProductName, UnitPrice*UnitsOnOrder AS InventoryValue FROM products ORDER BY InventoryValue DESC, productName ASC;
+SELECT ProductID, ProductName, UnitPrice*UnitsOnOrder AS InventoryValue FROM products ORDER BY InventoryValue DESC, ProductName ASC;
